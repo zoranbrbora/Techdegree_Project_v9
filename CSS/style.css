@@ -11,12 +11,9 @@ GENERAL
 
 body {
 	font-family: 'Lato', sans-serif;
+	color: #ccc;
 }
 
-img {
-	max-width: 100%;
-	max-height: 100%;
-}
 
 a {
 	text-decoration: none;
@@ -40,11 +37,12 @@ HEADER
 	padding: 20px 0 20px 8px;
 	font-size: 1.3rem;
 	font-weight: 300;
-	color: #fff;
+	color: #ccc;
 }
 
 .your {
 	font-weight: bold;
+	color: #fff;
 }
 
 /* AVATAR  */
@@ -71,7 +69,6 @@ HEADER
 .avatar-name {
 	padding: 3px;
 	font-size: 0.7rem;
-	color: white;
 }
 
 /*=====================
@@ -89,11 +86,8 @@ NAVIGATION
 
 .main-nav li  {
 	list-style-type: none;
-	margin-left: 10px;
-	margin-right: 10px;
-	padding-bottom: 9px;
-	padding-left: 5px;
-	padding-right: 5px;
+	margin: 0 10px;
+	padding: 0 5px 9px 5px;
 }
 
 .main-nav li:hover {
@@ -129,4 +123,32 @@ CLEARFIX
 	.group {
 	    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
 	}
+}
+
+/*=====================
+RESPONSIVE LAYOUT
+======================*/
+
+/* DESKTOP LAYOUT */
+
+@media only screen and (min-width: 1024px) {
+	.main-nav {
+		flex-flow: column;
+		justify-content: flex-start;
+		align-items: center;
+		width: 4%;
+		height: 950px;
+	}
+
+	.main-nav li {
+		margin-top: 10px;
+		width: 100%;
+		text-align: center;
+	}
+
+	.main-nav li:hover {
+		 border-left: 3px solid #99ff99;
+		 border-bottom: none;
+	}
+
 }
