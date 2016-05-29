@@ -55,16 +55,26 @@ HEADER
 }
 
 .bell-icon {
-	width: 25px;
-	height: 25px;
-	margin-right: 10px;
+	width: 20px;
+	height: 20px;
+	margin-right: 0px;
 	cursor: pointer;
+}
+
+.alert-light {
+	width: 6px;
+	height: 6px;
+	background: #99ff99;
+	margin-bottom: 15px;
+	margin-right: 10px;
+	border-radius: 100%;
 }
 
 .avatar-icon {
 	width: 30px;
 	height: 30px;
 	border-radius: 100%;
+	margin-left: 15px;
 }
 
 .avatar-name {
