@@ -79,6 +79,7 @@ NAVIGATION
 	background: #595986;
 	width: 100%;
 	height: 55px;
+	float: left;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -109,14 +110,16 @@ NAVIGATION
 MAIN CONTENT
 ======================*/
 
+
 .title-search {
 	text-align: center;
 }
 
 .content-title {
+	display: inline-block;
 	font-size: 1.5rem;
 	color: #B9B8B8;
-	padding-top: 1rem;
+	margin-top: 1em;
 }
 
 input[type="text"] {
@@ -152,6 +155,30 @@ CLEARFIX
 /*=====================
 RESPONSIVE LAYOUT
 ======================*/
+
+/* TABLET LAYOUT */
+
+@media only screen and (min-width: 768px) {
+	.main-content {
+		border: 1px solid black;
+	}
+
+	.content-title {
+		margin: 0;
+		float: left;
+		padding-top: 14px;
+		padding-bottom: 14px;
+		padding-left: 10px;
+		padding-right: 10px; 
+		border: 1px solid black;
+	}
+
+	input[type="text"] {
+		float: right;
+		width: 30%;
+		margin: 15px 5px 10px 0; 
+	}
+}
 
 /* DESKTOP LAYOUT */
 
