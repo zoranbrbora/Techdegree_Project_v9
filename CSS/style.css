@@ -132,6 +132,40 @@ input[type="text"] {
 	margin-top: 1rem;
 }
 
+/*=====================
+ALERT MESSAGES
+======================*/
+
+.alert-box {
+	border: 1px solid black;
+	text-align: center;
+	line-height: 20px;
+}
+
+.alert-message {
+	margin: 10px 0px;
+	padding: 10px;
+	border-radius: 3%;
+	border: 1px solid black;
+	width: 95%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	background: #6060CD;
+}
+
+.alert {
+	text-transform: uppercase;
+	padding-right: 15px;
+	color: #fff;
+}
+
+.offButton {
+	padding-left: 40px;
+	font-weight: 900;
+	font-size: 20px;
+	color: #fff;
+}
+
 
 
 /*=====================
@@ -161,6 +195,7 @@ RESPONSIVE LAYOUT
 @media only screen and (min-width: 768px) {
 	.main-content {
 		border: 1px solid black;
+		
 	}
 
 	.content-title {
@@ -177,6 +212,15 @@ RESPONSIVE LAYOUT
 		float: right;
 		width: 30%;
 		margin: 15px 5px 10px 0; 
+	}
+
+	.alert-message {
+		text-align: left;
+		padding-left: 30px;
+	}
+
+	.offButton {
+		float: right;
 	}
 }
 
@@ -200,6 +244,22 @@ RESPONSIVE LAYOUT
 	.main-nav li:hover {
 		 border-left: 3px solid #99ff99;
 		 border-bottom: none;
+	}
+
+	.main-content {
+		width: 96%;
+		margin-left: 4%;
+	}
+
+	.alert-box {
+		width: 100%;
+		text-align: center;
+	}
+
+	.alert-message {
+		width: 95%;
+		margin-left: 2.5%;
+
 	}
 
 }
