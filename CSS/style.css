@@ -105,6 +105,30 @@ NAVIGATION
 	opacity: 1;
 }
 
+/*=====================
+MAIN CONTENT
+======================*/
+
+.title-search {
+	text-align: center;
+}
+
+.content-title {
+	font-size: 1.5rem;
+	color: #B9B8B8;
+	padding-top: 1rem;
+}
+
+input[type="text"] {
+	background: url(../images/search.png) no-repeat;
+	background-size: 15px 15px;
+	background-position: center right;
+	font-size: 18px;
+	width: 94%;
+	padding: 2px 5px;
+	margin-top: 1rem;
+}
+
 
 
 /*=====================
