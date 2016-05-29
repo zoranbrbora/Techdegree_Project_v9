@@ -57,7 +57,8 @@ HEADER
 .bell-icon {
 	width: 25px;
 	height: 25px;
-	padding-right: 10px;
+	margin-right: 10px;
+	cursor: pointer;
 }
 
 .avatar-icon {
@@ -137,7 +138,6 @@ ALERT MESSAGES
 ======================*/
 
 .alert-box {
-	border: 1px solid black;
 	text-align: center;
 	line-height: 20px;
 }
@@ -145,8 +145,7 @@ ALERT MESSAGES
 .alert-message {
 	margin: 10px 0px;
 	padding: 10px;
-	border-radius: 3%;
-	border: 1px solid black;
+	border-radius: 2%;
 	width: 95%;
 	margin-left: 2.5%;
 	margin-right: 2.5%;
@@ -160,10 +159,11 @@ ALERT MESSAGES
 }
 
 .offButton {
-	padding-left: 40px;
+	margin-left: 40px;
 	font-weight: 900;
 	font-size: 20px;
 	color: #fff;
+	cursor: pointer;
 }
 
 
@@ -194,8 +194,6 @@ RESPONSIVE LAYOUT
 
 @media only screen and (min-width: 768px) {
 	.main-content {
-		border: 1px solid black;
-		
 	}
 
 	.content-title {
@@ -204,8 +202,7 @@ RESPONSIVE LAYOUT
 		padding-top: 14px;
 		padding-bottom: 14px;
 		padding-left: 10px;
-		padding-right: 10px; 
-		border: 1px solid black;
+		padding-right: 10px;
 	}
 
 	input[type="text"] {
