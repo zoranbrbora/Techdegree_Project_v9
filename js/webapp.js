@@ -8,17 +8,12 @@ var  $notBtn = $('#notificationBtn'),
 
 $offBtn1.click("on" ,function(){
     $message1.hide(500);
-    if ($message2.show() == false ) {
     	$alertLight.hide();	
-    }
-    else if($message2.show() == true ) {
-    	$alertLight.show();
-    }
 });
 
 $offBtn2.click("on" ,function(){
     $message2.hide(500);
-    $alertLight.hide();	
+    $alertLight.hide();
 });
 
 $notBtn.click("on" ,function(){
