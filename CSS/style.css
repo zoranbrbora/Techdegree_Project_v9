@@ -19,6 +19,8 @@ a {
 	text-decoration: none;
 }
 
+
+
 /*=====================
 HEADER
 ======================*/
@@ -141,6 +143,7 @@ input[type="text"] {
 	width: 94%;
 	padding: 2px 5px;
 	margin-top: 1rem;
+	margin-bottom: 1em;
 }
 
 /*=====================
@@ -176,7 +179,17 @@ ALERT MESSAGES
 	cursor: pointer;
 }
 
+/*=====================
+CHARTS
+======================*/
 
+.lineChart-container {
+	display: inline-block;
+	width: 98%;
+	margin-left: 1%;
+	margin-right: 1%;
+	height: 300px;
+}
 
 /*=====================
 CLEARFIX
@@ -211,7 +224,7 @@ RESPONSIVE LAYOUT
 		float: left;
 		padding-top: 14px;
 		padding-bottom: 14px;
-		padding-left: 10px;
+		padding-left: 15px;
 		padding-right: 10px;
 	}
 
@@ -266,7 +279,16 @@ RESPONSIVE LAYOUT
 	.alert-message {
 		width: 95%;
 		margin-left: 2.5%;
+	}
 
+	.content-title {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	input[type="text"] {
+		margin-right: 1%;
+		 
 	}
 
 }
