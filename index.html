@@ -13,7 +13,7 @@
 
 		<div class="wrapper">
 
-			<header class="main-header">
+			<header class="main-header">  <!--Main Header start-->
 				<a href="index.html">
 					<h1 class="logo"><span class="your">Your</span>App</h1>
 				</a>
@@ -24,9 +24,9 @@
 					<img class="avatar-icon" src="images/avatar.jpg">
 					<p class="avatar-name">Zoran Brbora</p>
 				</div>
-			</header>
+			</header> <!--Main Header end-->
 
-			<nav class="main-nav">
+			<nav class="main-nav"> <!--Main Navigation start-->
 				<li>
 					<a href="index.html">
 						<img class="btn" src="images/icon-dashboard.svg">
@@ -47,10 +47,10 @@
 						<img class="btn" src="images/icon-settings.svg">
 					</a>
 				</li>
-			</nav>
+			</nav> <!--Main Navigation end-->
 			
 
-			<div class="main-content clearfix">
+			<div class="main-content clearfix"> <!--Main Content start-->
 
 				<div class="title-search">
 					<h2 class="content-title">Dashboard</h2>
@@ -65,12 +65,26 @@
 				<div class="alert-box" id="alerts">
 					<p class="alert-message" id="message1"><span class="alert">Alert</span>Contrary to popular belief, Lorem Ipsum is not simply random text.<span class="offButton" id="offButton1">X</span></p>
 				</div>
-				
+
+
+				<!--Line Chart start-->
+
+				<div class="lineChart-box">
+					<h3 class="lineChart-title">Traffic</h3>
+					<nav class="lineChart-nav">
+						<li>Hourly</li>
+						<li>Daily</li>
+						<li>Weekly</li>
+						<li>Monthly</li>
+					</nav>
+				</div>
                 <div class="lineChart-container">
 				    <canvas id="lineChart"></canvas>
                 </div>   
 			
-			</div>
+				<!--Line Chart end-->
+
+			</div> <!--Main Content end-->
 
 		</div>
 
