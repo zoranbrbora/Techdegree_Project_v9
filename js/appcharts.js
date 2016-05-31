@@ -33,3 +33,60 @@ var myChart = new Chart(lineChart, {
         }
     }
 });
+
+//BAR CHART
+
+var barChart = document.getElementById("barChart");
+var myChart2 = new Chart(barChart, {
+    type: "bar",
+    data: {
+        labels: ["S", "M", "T", "W", "T", "F", "S"],
+        datasets: [
+            {
+                label: 'Visited',
+                data: [75, 100, 175, 125, 225, 211, 42],
+                backgroundColor: "rgba(96, 96, 205, 0.6)",
+            },
+            {
+                label: 'Signed Up',
+                data: [34, 72, 112, 90, 172, 152, 11],
+                backgroundColor: "rgba(255, 181, 107, 0.6)",
+            }
+        ]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: false
+                }
+            }]
+        }
+    }
+});
+
+//PIE CHART
+
+var doughnutChart = document.getElementById("pieChart");
+var myChart3 = new Chart(doughnutChart, {
+    type: 'doughnut',
+    data: {
+        labels: [
+            "Phones",
+            "Tablets",
+            "Desktop",
+            "PC",
+            "Apple"
+        ],
+        datasets: [{
+            data: [62, 45, 16, 23, 22],
+            backgroundColor: [
+                "rgb(102, 255, 255)",
+                "rgb(51, 251, 51)",
+                "rgb(96, 96, 205)",
+                "rgb(255, 51, 249)",
+                "rgb(255, 160, 51)",
+            ]
+        }]
+    }
+});
