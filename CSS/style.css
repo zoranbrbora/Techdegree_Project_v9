@@ -6,7 +6,9 @@ GENERAL
 *,
 *:before,
 *:after {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 body {
@@ -14,12 +16,18 @@ body {
 	color: #BCB5B5;
 }
 
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
 
 a {
 	text-decoration: none;
 }
 
-
+.main-content {
+		
+} 
 
 /*=====================
 HEADER
@@ -28,6 +36,7 @@ HEADER
 .main-header {
 	height: 60px;
 	background: #6060CD;
+	z-index: 5;
 }
 
 
@@ -94,8 +103,11 @@ NAVIGATION
 	height: 55px;
 	float: left;
 	display: flex;
+	display: -webkit-flex;
+	display: -ms-flex;
 	justify-content: center;
 	align-items: center;
+	margin-top: -5px;
 }
 
 .main-nav li  {
@@ -335,17 +347,28 @@ RESPONSIVE LAYOUT
 
 @media only screen and (min-width: 1024px) {
 	.main-nav {
-		flex-flow: column;
-		justify-content: flex-start;
-		align-items: center;
+		display: inline-block;
 		width: 4%;
 		height: 950px;
+		text-align: center;
+		position: absolute;
+		top: 65px;
+		left: 0;
+	}
+
+	.main-nav li{
+		margin-right: 5px;
+		margin: 0;
+		width: 100%;
+		padding: 5px;
 	}
 
 	.main-nav li {
-		margin-top: 10px;
+		margin-right: 5px;
+		display: inline-block;
+		padding: 5px;
+		margin-right: 10px;
 		width: 100%;
-		text-align: center;
 	}
 
 	.main-nav li:hover {
