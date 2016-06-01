@@ -233,7 +233,7 @@ LINE CHART
 }
 
 /*=====================
-BAR CHART
+BAR CHART AND PIE CHART
 ======================*/
 
 .barChart-title,
@@ -250,6 +250,70 @@ BAR CHART
 	width: 98%;
 	margin-left: 1%;
 	margin-right: 1%;
+}
+
+/*=====================
+SOCIAL WIDGETS
+======================*/
+
+.social-box {
+	margin-top: 5%;
+}
+
+.social-title {
+	margin-top: 30px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 20px;
+	color: #9C9999;
+}
+
+.social-stats {
+	background: #ccc;
+	margin-bottom: 2px;
+	margin-top: 2px;
+}
+
+.social-icon {
+	margin-left: 5%;
+	border-radius: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+	width: 50px;
+	height: 50px;
+	fill: #fff;
+	background: #6060CD;
+}
+
+.google-icon {
+	padding: 10px;
+}
+
+.social-stats ul {
+	float: right;
+	margin-top: 20px;
+}
+
+.social-stats li {
+	color: #6060CD;
+	list-style-type: none;
+}
+
+.twitter-list {
+	margin-right: 77px;
+}
+
+.facebook-list {
+	margin-right: 90px;
+}
+
+.google-list {
+	margin-right: 87px;
+}
+
+.social-numbers {
+	font-size: 30px;
 }
 
 
@@ -341,6 +405,22 @@ RESPONSIVE LAYOUT
 		margin-left: 1%;
 		padding-left: 50px;
 	}
+
+	.social-box {
+		margin-top: 0px;
+	}
+
+	.social-title {
+		text-align: left;
+		margin-left: 1%;
+	}
+
+	.social-stats {
+		display: inline-block;
+		width: 31%;
+		margin-left: 1%;
+		margin-right: 1%;
+	}
 }
 
 /* DESKTOP LAYOUT */
@@ -349,11 +429,12 @@ RESPONSIVE LAYOUT
 	.main-nav {
 		display: inline-block;
 		width: 4%;
-		height: 950px;
 		text-align: center;
 		position: absolute;
 		top: 65px;
 		left: 0;
+		height: 2000px;
+		min-height: 100%;
 	}
 
 	.main-nav li{
@@ -413,5 +494,15 @@ RESPONSIVE LAYOUT
 		padding-left: 50px;
 	}
 
-	
+	.social-box {
+		text-align: center;
+	}
+
+	.social-stats {
+		display: inline-block;
+		width: 30%;
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+
 }
