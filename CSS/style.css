@@ -275,24 +275,23 @@ SOCIAL WIDGETS
 }
 
 .social-icon {
-	margin-left: 5%;
+	margin-left: 20px;
 	border-radius: 100%;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	padding: 10px;
+	padding: 15px;
 	width: 50px;
 	height: 50px;
 	fill: #fff;
-	background: #6060CD;
-}
-
-.google-icon {
-	padding: 10px;
+	background: #6156a1;
 }
 
 .social-stats ul {
-	float: right;
-	margin-top: 20px;
+	display: inline-block;
+	float:right;
+	vertical-align: center;
+	margin-top: 25px;
+	margin-right: 5%;
 }
 
 .social-stats li {
@@ -301,19 +300,20 @@ SOCIAL WIDGETS
 }
 
 .twitter-list {
-	margin-right: 77px;
+	margin-right: 1%;
 }
 
 .facebook-list {
-	margin-right: 90px;
+	margin-right: 1%;
 }
 
 .google-list {
-	margin-right: 87px;
+	margin-right: 1%;
 }
 
+
 .social-numbers {
-	font-size: 30px;
+	font-size: 20px;
 }
 
 
@@ -408,19 +408,21 @@ RESPONSIVE LAYOUT
 
 	.social-box {
 		margin-top: 0px;
+		margin-left: 3%;
+		text-align: center;
 	}
 
 	.social-title {
 		text-align: left;
-		margin-left: 1%;
 	}
 
 	.social-stats {
 		display: inline-block;
-		width: 31%;
+		width: 20%;
 		margin-left: 1%;
 		margin-right: 1%;
 	}
+
 }
 
 /* DESKTOP LAYOUT */
@@ -494,15 +496,8 @@ RESPONSIVE LAYOUT
 		padding-left: 50px;
 	}
 
-	.social-box {
-		text-align: center;
-	}
-
-	.social-stats {
-		display: inline-block;
-		width: 30%;
-		margin-left: 1%;
-		margin-right: 1%;
-	}
+	.social-stats ul {
+	margin-right: 30%;
+}
 
 }
