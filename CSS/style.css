@@ -291,7 +291,7 @@ SOCIAL WIDGETS
 	float:right;
 	vertical-align: center;
 	margin-top: 25px;
-	margin-right: 5%;
+	margin-right: 3%;
 }
 
 .social-stats li {
@@ -497,7 +497,7 @@ RESPONSIVE LAYOUT
 	}
 
 	.social-stats ul {
-	margin-right: 30%;
-}
+		margin-right: 20%;
+	}
 
 }
