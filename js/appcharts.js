@@ -17,7 +17,7 @@ var myChart = new Chart(lineChart, {
             pointBorderWidth: 1,
             pointRadius: 4,
             pointHoverRadius: 6,
-            data: [500, 750, 1250, 1000, 1500, 2000, 1500, 1750, 1250, 1750, 2250, 1750, 2250]
+            data: [0, 750, 1250, 1000, 1500, 2000, 1500, 1750, 1250, 1750, 2250, 1750, 2250]
         }]
     },
     options: {
@@ -27,7 +27,7 @@ var myChart = new Chart(lineChart, {
         scales: {
             yAxes: [{
                 ticks: {
-                    beginAtZero: false
+                    beginAtZero: true
                 }
             }]
         }
