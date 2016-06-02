@@ -245,6 +245,7 @@ BAR CHART AND PIE CHART
 	margin-bottom: 1em;
 }
 
+
 .barChart-container,
 .pieChart-container {
 	width: 98%;
@@ -257,14 +258,16 @@ SOCIAL WIDGETS
 ======================*/
 
 .social-box {
-	display: none;
-	margin-top: 5%;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
 }
 
 .social-title {
 	margin-top: 30px;
 	text-transform: uppercase;
 	text-align: center;
+	margin-top: 20px;
 	margin-bottom: 20px;
 	color: #9C9999;
 }
@@ -272,16 +275,16 @@ SOCIAL WIDGETS
 .social-stats {
 	background: #ccc;
 	margin-bottom: 2px;
-	margin-top: 2px;
-	width: 60%;
-	margin-left: 20%;
+	width: 300px;
+	padding: 10px 0px;
+	border-radius: 3%;
+	display: flex;
+	justify-content: center;
+	background: #ECE9E9;
 }
 
 .social-icon {
-	margin-left: 20px;
 	border-radius: 100%;
-	margin-top: 20px;
-	margin-bottom: 20px;
 	padding: 15px;
 	width: 50px;
 	height: 50px;
@@ -289,13 +292,29 @@ SOCIAL WIDGETS
 	background: #6156a1;
 }
 
+.twitter-icon {
+	margin-left: 17px;
+}
+
+.youtube-icon,
+.instagram-icon {
+	margin-left: 17px;
+	padding: 0;
+}
+
+.pinterest-icon {
+	margin-left: 0px;
+	padding: 0px;
+}
+
+.instagram-icon {
+	padding: 7px;
+}
+
 .social-stats ul {
-	display: inline-block;
-	float: right;
-	vertical-align: center;
 	text-align: left;
-	margin-top: 25px;
-	margin-right: 3%;
+	margin-right: 90px;
+	padding-left: 20px;
 }
 
 .social-stats li {
@@ -303,21 +322,9 @@ SOCIAL WIDGETS
 	list-style-type: none;
 }
 
-.twitter-list {
-	margin-right: 1%;
-}
-
-.facebook-list {
-	margin-right: 1%;
-}
-
-.google-list {
-	margin-right: 1%;
-}
-
 
 .social-numbers {
-	font-size: 20px;
+	font-size: 30px;
 }
 
 
@@ -393,7 +400,7 @@ RESPONSIVE LAYOUT
 		display: inline-block;
 		margin-top: 1em;
 		text-align: left;
-		margin-left: 20px;
+		margin-left: 15px;
 	}
 
 	.pieChart-title {
@@ -414,19 +421,24 @@ RESPONSIVE LAYOUT
 		padding-left: 50px;
 	}
 
+	.social-title {
+		text-align: left;
+		margin-left: 30px;
+	}
+
 	.social-box {
-		display: block;
-		margin-top: 0px;
-		margin-left: 3%;
-		text-align: center;
+		width: 95%;
+		flex-flow: wrap;
+		align-items: center;
+		justify-content: flex-start;
+		margin-left: 10px;
 	}
 
 	.social-stats {
-		display: inline-block;
-		width: 20%;
-		margin-left: 1%;
-		margin-right: 1%;
+		margin-left: 20px;
+		margin-top: 5px;
 	}
+
 
 }
 
@@ -501,8 +513,8 @@ RESPONSIVE LAYOUT
 		padding-left: 50px;
 	}
 
-	.social-stats ul {
-		margin-right: 25%;
+	.social-box {
+		width: 70%;
 	}
 
 }
