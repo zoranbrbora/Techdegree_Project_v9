@@ -34,6 +34,7 @@ var myChart = new Chart(lineChart, {
     }
 });
 
+
 //BAR CHART
 
 var barChart = document.getElementById("barChart");
