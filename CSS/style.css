@@ -26,7 +26,7 @@ a {
 }
 
 .main-content {
-		
+	
 } 
 
 /*=====================
@@ -103,8 +103,6 @@ NAVIGATION
 	height: 55px;
 	float: left;
 	display: flex;
-	display: -webkit-flex;
-	display: -ms-flex;
 	justify-content: center;
 	align-items: center;
 	margin-top: -5px;
@@ -516,7 +514,7 @@ RESPONSIVE LAYOUT
 
 	.social-box {
 		width: 85%;
-		justify-content: space-around;
+		justify-content: space-between;
 	}
 
 	.social-stats {
