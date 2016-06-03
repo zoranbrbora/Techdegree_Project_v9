@@ -29,6 +29,51 @@ a {
 	
 } 
 
+
+table.example5 {
+	border: 1px solid black;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	border: none;
+	text-align: left;
+	font-size: 0.8rem;
+}
+
+table.example5 th, table.example5 td {
+	border:0;
+	margin-bottom: 30px;
+}
+
+table.example5 th {
+	padding-top: 10px;
+	padding-left: 10px;
+	padding: 5px;
+}
+
+table.example5 th:first-child {
+	width: 50px;
+}
+
+.cell {
+	position: relative;
+	top: -22px;
+	left: 5px;
+}
+
+.member-icon {
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+}
+
+.newMembers-label {
+	text-align: center;
+	display: block;
+} 
+
+
+
 /*=====================
 HEADER
 ======================*/
