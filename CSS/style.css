@@ -331,13 +331,13 @@ NEW MEMBERS WIDGET
 
 
 .table-members {
-	border: 1px solid black;
 	width: 100%;
 	border: none;
 	text-align: left;
 	font-size: 0.7rem;
 	line-height: 16px;
 	color: black;
+	margin-bottom: 0px;
 }
 
 .newMembers-caption {
@@ -347,8 +347,17 @@ NEW MEMBERS WIDGET
 	text-transform: uppercase;
 	text-align: center;
 	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	color: #9C9999;
+}
+
+tr {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	line-height: 10px;
+	padding-bottom: 0px;
 }
 
 .table-members th, .table-members td {
@@ -365,15 +374,12 @@ NEW MEMBERS WIDGET
 	width: 50px;
 }
 
-.cell {
-	position: relative;
-	top: -22px;
-	left: 0px;
-}
 
 .cell-numbers {
+	width: 100%;
 	text-align: right;
-	padding-right: 10px;
+	padding-top: 17px;
+	padding-right: 20px;
 }
 
 .member-icon {
@@ -386,6 +392,23 @@ NEW MEMBERS WIDGET
 	color : #6060CD;
 	cursor: pointer;
 } 
+
+.last-cell {
+	margin-bottom: -30px;
+}
+
+
+/*=====================
+MEMBERS ACTIVITY
+======================*/
+
+.activity-title {
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	color: #9C9999;
+}
 
 
 
@@ -504,13 +527,13 @@ RESPONSIVE LAYOUT
 	}	
 
 	.newMembers-box {
-		width: 49%;
+		width: 50%;
 		margin-left: 25px;
 		border-right: 1px solid rgba(0, 0 ,0, .5);
 	}
 
 	.table-members {
-		font-size: 1em;
+		font-size: 0.8em;
 	}
 
 	.newMembers-caption {
@@ -518,6 +541,25 @@ RESPONSIVE LAYOUT
 		font-size: 1em;
 	}
 
+	.cell-numbers {
+		padding-right: 0px;
+		padding-top: 22px;
+	}
+
+	tr {
+		width: 95%;
+		padding-top: 30px;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+	}
+
+	.last-cell {
+		border: none;
+		margin-bottom: 20px;
+	}
+
+	.activity-box {
+		border: none;
+	}
 
 }
 
@@ -607,6 +649,10 @@ RESPONSIVE LAYOUT
 
 	.table-members {
 		font-size: 1.2em;
+	}
+
+	tr {
+		line-height: 20px;
 	}
 
 }
