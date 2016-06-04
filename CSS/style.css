@@ -361,7 +361,7 @@ tr {
 }
 
 .table-members th, .table-members td {
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 
 .table-members th {
@@ -405,9 +405,38 @@ MEMBERS ACTIVITY
 .activity-title {
 	text-transform: uppercase;
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 30px;
 	margin-bottom: 20px;
 	color: #9C9999;
+}
+
+.avatar-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: black;
+	font-size: 0.7rem;
+	margin-bottom: 10px;
+}
+
+.comment {
+	display: flex;
+	align-items: center;
+}
+
+.avatar-images {
+	margin-left: 5px;
+}
+
+.activity {
+	margin-left: 5px;
+}
+
+.arrow {
+	font-size: 20px;
+	margin-right: 5px;
+	font-weight: bold;
+	cursor: pointer;
 }
 
 
@@ -543,7 +572,7 @@ RESPONSIVE LAYOUT
 
 	.cell-numbers {
 		padding-right: 0px;
-		padding-top: 22px;
+		padding-top: 10px;
 	}
 
 	tr {
@@ -558,6 +587,23 @@ RESPONSIVE LAYOUT
 	}
 
 	.activity-box {
+		border: none;
+	}
+
+	.activity-title {
+		margin-top: 20px;
+		font-size: 0.8rem;
+		text-align: left;
+	}
+
+	.avatar-box {
+		border-bottom: 1px solid blue;
+		width: 95%;
+		font-size: 0.8em;
+		padding: 21px  0px 21px 0px;
+	}
+
+	.last-avatar {
 		border: none;
 	}
 
@@ -648,11 +694,24 @@ RESPONSIVE LAYOUT
 	}
 
 	.table-members {
-		font-size: 1.2em;
+		font-size: 0.9em;
 	}
 
 	tr {
 		line-height: 20px;
+	}
+
+	.activity-title {
+		font-size: 1.2em;
+	}
+
+	.avatar-box {
+		font-size: 0.9em;
+		padding-bottom: 19.5px;
+	}
+
+	.arrow {
+		font-size: 30px;
 	}
 
 }
@@ -670,5 +729,10 @@ RESPONSIVE LAYOUT
 
 	.social-stats {
 		width: 450px;
+	}
+
+	.table-members,
+	.avatar-box {
+		font-size: 1.2em;
 	}
 }	
