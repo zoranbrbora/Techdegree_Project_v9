@@ -251,6 +251,7 @@ BAR CHART AND PIE CHART
 	margin-right: 1%;
 }
 
+
 /*=====================
 SOCIAL WIDGETS
 ======================*/
@@ -442,7 +443,7 @@ RESPONSIVE LAYOUT
 		border-bottom: 1px solid rgba(0, 0 ,0, .5);
 		border-top: 1px solid rgba(0, 0 ,0, .5);
 		margin-top: 50px;
-		padding-bottom: 50px;
+		margin-bottom: 50px;
 	}	
 
 	.barChart-title {
@@ -452,6 +453,12 @@ RESPONSIVE LAYOUT
 		margin-left: 10px;
 	}
 
+	.barChart-container {
+		border-right: 1px solid rgba(0, 0, 0, .5);
+		padding-right: 10px;
+		padding-bottom: 20px;
+	}
+
 	.pieChart-title {
 		display: inline-block;
 	}
@@ -459,13 +466,13 @@ RESPONSIVE LAYOUT
 	.barChart-container {
 		display: inline-block;
 		vertical-align: top;
-		width: 48%;
+		width: 49.5%;
 	}
 
 	.pieChart-container {
 		display: inline-block;
 		vertical-align: top;
-		width: 48%;
+		width: 46.5%;
 		margin-left: 1%;
 		padding-left: 50px;
 	}
