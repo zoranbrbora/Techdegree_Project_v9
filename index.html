@@ -19,38 +19,40 @@
 				</a>
 
 				<div class="avatar">
-					<img class="bell-icon" id="notificationBtn" src="images/icon-bell.svg">
+					<img class="bell-icon" id="notificationBtn" src="images/icon-bell.svg" alt="Notification Icon">
 					<div class="alert-light" id="alert-light">&nbsp;</div>
-					<img class="avatar-icon" src="images/avatar.jpg">
+					<img class="avatar-icon" src="images/avatar.jpg" alt="Avatar Icon">
 					<p class="avatar-name">Zoran Brbora</p>
 				</div>
 			</header> <!--Main Header end-->
 
 			<nav class="main-nav"> <!--Main Navigation start-->
-				<li>
-					<a href="index.html">
-						<img class="btn" src="images/icon-dashboard.svg">
-					</a>
-				</li>
-				<li>
-					<a href="members.html">
-						<img class="btn" src="images/icon-members.svg">
-					</a>
-				</li>
-				<li>
-					<a href="visits.html">
-						<img class="btn" src="images/icon-visits.svg">
-					</a>
-				</li>
-				<li>
-					<a href="settings.html">
-						<img class="btn" src="images/icon-settings.svg">
-					</a>
-				</li>
+				<ul>
+					<li>
+						<a href="index.html">
+							<img class="btn" src="images/icon-dashboard.svg" alt="Dashboard Icon">
+						</a>
+					</li>
+					<li>
+						<a href="members.html">
+							<img class="btn" src="images/icon-members.svg" alt="Members Icon">
+						</a>
+					</li>
+					<li>
+						<a href="visits.html">
+							<img class="btn" src="images/icon-visits.svg" alt="Visits Icon">
+						</a>
+					</li>
+					<li>
+						<a href="settings.html">
+							<img class="btn" src="images/icon-settings.svg" alt="Settings Icon">
+						</a>
+					</li>
+				</ul>	
 			</nav> <!--Main Navigation end-->
 			
 
-			<div class="main-content clearfix"> <!--Main Content start-->
+			<div class="main-content"> <!--Main Content start-->
 
 				<div class="title-search">
 					<h2 class="content-title">Dashboard</h2>
@@ -72,28 +74,33 @@
 				<div class="lineChart-box">
 					<h3 class="lineChart-title">Traffic</h3>
 					<nav class="lineChart-nav">
-						<li>Hourly</li>
-						<li>Daily</li>
-						<li>Weekly</li>
-						<li>Monthly</li>
+						<ul>
+							<li>Hourly</li>
+							<li>Daily</li>
+							<li>Weekly</li>
+							<li>Monthly</li>
+						</ul>
 					</nav>
 				</div>
-                <div class="lineChart-container">
-				    <canvas id="lineChart"></canvas>
-                </div>   
-			
-				<!--Line Chart end-->
 
-				<!--Bar Chart start-->
-			
-				<div class="barChart-container">
-				<h3 class="barChart-title">Daily Traffic</h3>
-				    <canvas id="barChart"></canvas>
-                </div><!--
-				white Space
-                --><div class="pieChart-container">
-				<h3 class="pieChart-title">Mobile Users</h3>
-				    <canvas id="pieChart"></canvas>
+				
+	            <div class="lineChart-container">
+					<canvas id="lineChart"></canvas>
+	            </div>   
+				
+					<!--Line Chart end-->
+
+					<!--Bar Chart start-->
+				<div class="barPie-box">
+					<div class="barChart-container">
+					<h3 class="barChart-title">Daily Traffic</h3>
+					    <canvas id="barChart"></canvas>
+	                </div><!--
+					white Space
+	                --><div class="pieChart-container">
+					<h3 class="pieChart-title">Mobile Users</h3>
+					    <canvas id="pieChart"></canvas>
+	                </div>
                 </div>
 			
                <!--Bar Chart end-->
@@ -121,7 +128,7 @@
 						</div>
 
 						<div class="social-stats">
-							<svg class="social-icon facebook-icon" enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"/></svg>
+							<svg class="social-icon facebook-icon" enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_3" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"/></svg>
 							<ul class="facebook-list">
 								<li>Facebook</li>
 								<li class="social-numbers">8,739</li>
@@ -129,7 +136,7 @@
 						</div>
 
 						<div class="social-stats">
-							<svg class="social-icon google-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							<svg class="social-icon google-icon" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
 <path d="M17.7,25.7c0-0.3,0-0.5-0.1-0.8c-0.1-0.2-0.1-0.5-0.2-0.7c-0.1-0.2-0.2-0.4-0.3-0.7c-0.2-0.2-0.3-0.4-0.4-0.6
 	c-0.1-0.2-0.3-0.3-0.5-0.6c-0.2-0.2-0.4-0.4-0.5-0.5c-0.1-0.1-0.3-0.3-0.6-0.5c-0.3-0.2-0.5-0.4-0.6-0.4s-0.3-0.2-0.6-0.4
@@ -187,35 +194,36 @@
 				<div class="members-box">
 
 					<div class="newMembers-box">
-						<table class="example5">
-						<label class="newMembers-label">New Members</label>		
+						<table class="table-members">
+						<caption class="newMembers-caption">New Members</caption>		
 							<tr>
-								<th rowspan="2"><img class="member-icon" src="images/avatar.jpg"></th><td class="cell">Victoria Chambers</td>
+								<th rowspan="2"><img class="member-icon" src="images/avatar1.jpg" alt="Picture of Victoria Chambers"></th>
+								<td class="cell">Victoria Chambers</td>
 							</tr>
 							<tr>
-								<td class="cell">victoriachambers@example.com</td>
-								<td class="cell">10/15/15</td>
+								<td class="cell cell-mail">victoriachambers@example.com</td>
+								<td class="cell cell-numbers">10/15/15</td>
 							</tr>
 							<tr>
-								<th rowspan="2"><img class="member-icon" src="images/avatar.jpg"></th><td class="cell">Dale Byrd</td>
+								<th rowspan="2"><img class="member-icon" src="images/avatar2.jpg" alt="Picture of Dale Byrd"></th><td class="cell">Dale Byrd</td>
 							</tr>
 							<tr>
-								<td class="cell">dalebyrd@example.com</td>
-								<td class="cell">10/15/15</td>
+								<td class="cell cell-mail">dalebyrd@example.com</td>
+								<td class="cell cell-numbers">17/15/15</td>
 							</tr>
 							<tr>
-								<th rowspan="2"><img class="member-icon" src="images/avatar.jpg"></th><td class="cell">Dawn Wood</td>
+								<th rowspan="2"><img class="member-icon" src="images/avatar3.jpg" alt="Picture of Dan Wodd"></th><td class="cell">Dawn Wood</td>
 							</tr>
 							<tr>
-								<td class="cell">dawnwood@example.com</td>
-								<td class="cell">10/15/15</td>
+								<td class="cell cell-mail">dawnwood@example.com</td>
+								<td class="cell cell-numbers">21/15/15</td>
 							</tr>
 							<tr>
-								<th rowspan="2"><img class="member-icon" src="images/avatar.jpg"></th><td class="cell">Dan Oliver</td>
+								<th rowspan="2"><img class="member-icon" src="images/avatar4.jpg" alt="Picture of Dan Oliver"></th><td class="cell">Dan Oliver</td>
 							</tr>
 							<tr>
-								<td class="cell">danoliver@example.com</td>
-								<td class="cell">10/15/15</td>
+								<td class="cell cell-mail">danoliver@example.com</td>
+								<td class="cell cell-numbers">28/15/15</td>
 							</tr>
 						</table>
 

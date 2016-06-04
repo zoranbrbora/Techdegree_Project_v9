@@ -6,9 +6,7 @@ GENERAL
 *,
 *:before,
 *:after {
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
@@ -24,54 +22,6 @@ body {
 a {
 	text-decoration: none;
 }
-
-.main-content {
-	
-} 
-
-
-table.example5 {
-	border: 1px solid black;
-	width: 90%;
-	margin-left: 5%;
-	margin-right: 5%;
-	border: none;
-	text-align: left;
-	font-size: 0.8rem;
-}
-
-table.example5 th, table.example5 td {
-	border:0;
-	margin-bottom: 30px;
-}
-
-table.example5 th {
-	padding-top: 10px;
-	padding-left: 10px;
-	padding: 5px;
-}
-
-table.example5 th:first-child {
-	width: 50px;
-}
-
-.cell {
-	position: relative;
-	top: -22px;
-	left: 5px;
-}
-
-.member-icon {
-	width: 40px;
-	height: 40px;
-	border-radius: 100%;
-}
-
-.newMembers-label {
-	text-align: center;
-	display: block;
-} 
-
 
 
 /*=====================
@@ -151,6 +101,10 @@ NAVIGATION
 	justify-content: center;
 	align-items: center;
 	margin-top: -5px;
+}
+
+.main-nav ul {
+	display: flex;
 }
 
 .main-nav li  {
@@ -264,6 +218,7 @@ LINE CHART
 	text-transform: uppercase;
 }
 
+
 .lineChart-nav li {
 	list-style-type: none;
 	display: inline-block;
@@ -370,25 +325,67 @@ SOCIAL WIDGETS
 	font-size: 40px;
 }
 
-
 /*=====================
-CLEARFIX
+NEW MEMBERS WIDGET
 ======================*/
 
-.clearfix {
-	.group:before,
-	.group:after {
-	    content: "";
-	    display: table;
-	} 
-	.group:after {
-	    clear: both;
-	}
-	.group {
-	    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
-	}
+
+.table-members {
+	border: 1px solid black;
+	width: 100%;
+	border: none;
+	text-align: left;
+	font-size: 0.7rem;
+	line-height: 16px;
+	color: black;
 }
 
+.newMembers-caption {
+	font-size: 1.4em;
+	text-align: center;
+	margin-top: 30px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #9C9999;
+}
+
+.table-members th, .table-members td {
+	margin-bottom: 30px;
+}
+
+.table-members th {
+	padding-top: 10px;
+	padding-left: 0px;
+	padding: 5px;
+}
+
+.table-members th:first-child {
+	width: 50px;
+}
+
+.cell {
+	position: relative;
+	top: -22px;
+	left: 0px;
+}
+
+.cell-numbers {
+	text-align: right;
+	padding-right: 10px;
+}
+
+.member-icon {
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+}
+
+.cell-mail {
+	color : #6060CD;
+	cursor: pointer;
+} 
 
 
 
@@ -436,14 +433,23 @@ RESPONSIVE LAYOUT
 	}
 
 	.lineChart-nav {
+		margin-top:0px;
 		margin-right: 10px;
+		font-size: 20px;
 	}
+
+	.barPie-box {
+		border-bottom: 1px solid rgba(0, 0 ,0, .5);
+		border-top: 1px solid rgba(0, 0 ,0, .5);
+		margin-top: 50px;
+		padding-bottom: 50px;
+	}	
 
 	.barChart-title {
 		display: inline-block;
 		margin-top: 1em;
 		text-align: left;
-		margin-left: 15px;
+		margin-left: 10px;
 	}
 
 	.pieChart-title {
@@ -466,7 +472,7 @@ RESPONSIVE LAYOUT
 
 	.social-title {
 		text-align: left;
-		margin-left: 30px;
+		margin-left: 25px;
 	}
 
 	.social-box {
@@ -481,6 +487,29 @@ RESPONSIVE LAYOUT
 		width: 300px;
 		margin-left: 20px;
 		margin-top: 5px;
+	}
+
+	.members-box {
+		display: flex;
+		width: 100%;
+		border-top: 1px solid rgba(0, 0 ,0, .5);
+		border-bottom: 1px solid rgba(0, 0 ,0, .5);
+		margin-top: 20px;
+	}	
+
+	.newMembers-box {
+		width: 49%;
+		margin-left: 25px;
+		border-right: 1px solid rgba(0, 0 ,0, .5);
+	}
+
+	.table-members {
+		font-size: 1em;
+	}
+
+	.newMembers-caption {
+		text-align: left;
+		font-size: 1em;
 	}
 
 
@@ -498,6 +527,10 @@ RESPONSIVE LAYOUT
 		left: 0;
 		height: 2000px;
 		min-height: 100%;
+	}
+
+	.main-nav ul {
+		flex-flow: column;
 	}
 
 	.main-nav li{
@@ -566,4 +599,24 @@ RESPONSIVE LAYOUT
 		width: 370px;
 	}
 
+	.table-members {
+		font-size: 1.2em;
+	}
+
 }
+
+
+@media only screen and (min-width: 1600px) {
+
+.social-box {
+		width: 95%;
+		flex-flow: wrap;
+		align-items: center;
+		justify-content: space-between;
+		margin-left: 10px;
+	}
+
+	.social-stats {
+		width: 450px;
+	}
+}	
