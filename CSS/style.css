@@ -597,10 +597,10 @@ RESPONSIVE LAYOUT
 	}
 
 	.avatar-box {
-		border-bottom: 1px solid blue;
 		width: 95%;
 		font-size: 0.8em;
 		padding: 21px  0px 21px 0px;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 	}
 
 	.last-avatar {
