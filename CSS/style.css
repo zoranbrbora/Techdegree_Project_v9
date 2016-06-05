@@ -239,6 +239,11 @@ LINE CHART
 	border-radius: 25%;
 }
 
+.weekly {
+	color: white;
+	background: #2C9C2C;
+}
+
 /*=====================
 BAR CHART AND PIE CHART
 ======================*/
@@ -651,10 +656,10 @@ RESPONSIVE LAYOUT
 		margin-left: 15px;
 	}
 
-	.lineChart-nav {
+	.lineChart-nav li {
 		margin-top:0px;
 		margin-right: 10px;
-		font-size: 20px;
+		font-size: 0.8em;
 	}
 
 	.barPie-box {
@@ -704,7 +709,7 @@ RESPONSIVE LAYOUT
 		width: 95%;
 		flex-flow: wrap;
 		align-items: center;
-		justify-content: center;
+		justify-content: space-between;
 		margin-left: 10px;
 	}
 
@@ -893,7 +898,7 @@ RESPONSIVE LAYOUT
 		flex-flow: column;
 	}
 
-	.main-nav li{
+	.main-nav li {
 		margin-right: 10px;
 		margin: 0;
 		width: 100%;
@@ -938,6 +943,10 @@ RESPONSIVE LAYOUT
 
 	.lineChart-nav {
 		margin-right: 15px;
+	}
+
+	.lineChart-nav li {
+		font-size: 1em;
 	}
 
 	.pieChart-container {
