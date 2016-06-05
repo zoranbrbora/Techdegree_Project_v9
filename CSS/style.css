@@ -501,6 +501,111 @@ textarea:focus {
 	margin: 0px;
 }
 
+/*=====================
+SETTINGS
+======================*/
+
+.settings-title {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1em;
+	color: #9C9999;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.email-not {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.not-text {
+	font-size: 0.7rem;
+	color: #000;
+	margin-left: 3%;
+}
+
+.notification {
+	margin-bottom: 10px;
+}
+
+.onoffswitch,
+.onoffswitch2 {
+    position: relative; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+    margin-right: 3%;
+}
+.onoffswitch-checkbox,
+.onoffswitch2-checkbox {
+    display: none;
+}
+
+.onoffswitch-label,
+.onoffswitch2-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+
+.onoffswitch-inner,
+.onoffswitch2-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after,
+.onoffswitch2-inner:before, .onoffswitch2-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: 'Lato', sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before,
+.onoffswitch2-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #6060CD; color: #FFFFFF;
+}
+.onoffswitch-inner:after,
+.onoffswitch2-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch,
+.onoffswitch2-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner,
+.onoffswitch2-checkbox:checked + .onoffswitch2-label .onoffswitch2-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch,
+.onoffswitch2-checkbox:checked + .onoffswitch2-label .onoffswitch2-switch {
+    right: 0px; 
+}
+
+.timezone {
+	padding: 5px;
+	width: 98%;
+	margin-left: 1%;
+	margin-top: 10px;
+	background: #6060CD;
+	color: white;
+}
+
+
+.button-container {
+	margin-top: 10px;
+}
+
+.cancel {
+	background: #B7B7B7;
+}
 
 
 /*=====================
@@ -669,10 +774,9 @@ RESPONSIVE LAYOUT
 		border: none;
 	}
 
-	.settings-box {
+	.messageSettings-box {
 		display: flex;
 		border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-		margin-bottom: 20px;
 	}
 
 	.form-box {
@@ -704,6 +808,71 @@ RESPONSIVE LAYOUT
 		margin-top: 20px;
 		font-size: 0.8rem;
 	}
+
+	.settings-box {
+		width: 50%;
+	}
+
+	.settings-title {
+		text-align: left;
+		margin-left: 5%;
+		margin-top: 20px;
+		font-size: 0.8rem;
+	}
+
+	.email-not {
+		justify-content: flex-start;
+		width: 95%;
+		margin-left: 5%;
+	}
+	
+	.notification {
+		margin-top: 15px;
+	}
+	.public {
+		margin-top: 30px;
+	}
+
+	.not-text {
+		font-size: 0.8em;
+		margin-left: 0px;	
+	}
+
+	.onoffswitch {
+		margin-left: 30px;
+	}
+
+	.onoffswitch2 {
+		margin-left: 55px;
+	}
+
+	.timezone {
+		margin-top: 30px;
+		margin-left: 5%;
+		width: 90%;
+	}
+
+	.button-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 90%;
+		margin-left: 5%;
+		height: 30px;
+		margin-top: 38px;
+	}
+
+	.save {
+		margin-left: -1px;
+		width: 45%;
+	}
+
+	.cancel {
+		margin-right: 0px;
+	}
+
+
+
 
 }
 
@@ -799,7 +968,8 @@ RESPONSIVE LAYOUT
 	.social-title,
 	.barChart-title,
 	.pieChart-title,
-	.warning-message {
+	.warning-message,
+	.settings-title {
 		font-size: 1.2em;
 	}
 
@@ -831,7 +1001,9 @@ RESPONSIVE LAYOUT
 	}
 
 	.table-members,
-	.avatar-box {
+	.avatar-box,
+	.not-text,
+	.timezone {
 		font-size: 1.2em;
 	}
 
@@ -844,4 +1016,21 @@ RESPONSIVE LAYOUT
 	button {
 		font-size: 20px;
 	}
+
+	.settings-title {
+		font-size: 1.4em;
+	}
+
+	.onoffswitch2 {
+		margin-left: 70px;
+	}
+
+	.timezone {
+		margin-top: 35px;
+	}
+
+	.button-container {
+		margin-top: 52px;
+	}
+
 }	
