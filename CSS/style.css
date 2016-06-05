@@ -150,7 +150,7 @@ MAIN CONTENT
 	margin-top: 1em;
 }
 
-input[type="text"] {
+.text-input {
 	background: url(../images/search.png) no-repeat;
 	background-size: 15px 15px;
 	background-position: center right;
@@ -159,6 +159,12 @@ input[type="text"] {
 	padding: 2px 5px;
 	margin-top: 1rem;
 	margin-bottom: 1em;
+	transition: all 0.5s ease-out;
+}
+
+.text-input:focus {
+	color: white;
+	background-color: #6060CD;
 }
 
 /*=====================
@@ -443,6 +449,59 @@ MEMBERS ACTIVITY
 }
 
 
+/*=====================
+FORM
+======================*/
+
+
+legend {
+	text-align: center;
+	text-transform: uppercase;
+	color: #9C9999;
+}
+
+.search-member,
+textarea,
+button,
+.warning-message {
+	width: 98%;
+	margin-left: 1%;
+	margin-right: 1%;
+	padding: 5px;
+	margin-top: 1rem;
+	margin-bottom: 1em;
+	transition: all 0.5s ease-out;
+}
+
+button {
+	color: #fff;
+	background: #6060CD;
+	text-transform: uppercase;
+	font-weight: bold;	
+}
+
+.search-member:focus,
+textarea:focus {
+	color: white;
+	background: #6060CD;
+}
+
+.ui-autocomplete {
+	background: #6060CD;
+	color: white;
+	display: inline-block;
+	line-height: 16px;
+	font-size: 16px;
+	padding: 5px;
+}
+
+.warning-message {
+	color: #6060CD;
+	font-weight: bold;
+	margin: 0px;
+}
+
+
 
 /*=====================
 RESPONSIVE LAYOUT
@@ -610,6 +669,42 @@ RESPONSIVE LAYOUT
 		border: none;
 	}
 
+	.settings-box {
+		display: flex;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+		margin-bottom: 20px;
+	}
+
+	.form-box {
+		width: 50%;
+		border-right: 1px solid rgba(0, 0, 0, 0.5);
+	}
+
+	form {
+		margin-top: 20px;
+		width: 94%;
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+
+	.search-member,
+	textarea,
+	button,
+	.warning-message {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	textarea {
+		height: 100px;
+	}
+
+	legend {
+		text-align: left;
+		margin-top: 20px;
+		font-size: 0.8rem;
+	}
+
 }
 
 /* DESKTOP LAYOUT */
@@ -698,7 +793,13 @@ RESPONSIVE LAYOUT
 		line-height: 20px;
 	}
 
-	.activity-title {
+	.activity-title,
+	legend,
+	.newMembers-caption,
+	.social-title,
+	.barChart-title,
+	.pieChart-title,
+	.warning-message {
 		font-size: 1.2em;
 	}
 
@@ -710,6 +811,7 @@ RESPONSIVE LAYOUT
 	.arrow {
 		font-size: 30px;
 	}
+
 
 }
 
@@ -731,5 +833,15 @@ RESPONSIVE LAYOUT
 	.table-members,
 	.avatar-box {
 		font-size: 1.2em;
+	}
+
+	.newMembers-caption {
+		font-size: 1.0em;
+	}
+
+	.search-member,
+	textarea,
+	button {
+		font-size: 20px;
 	}
 }	
