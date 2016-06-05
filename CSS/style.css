@@ -633,7 +633,7 @@ RESPONSIVE LAYOUT
 	input[type="text"] {
 		float: right;
 		width: 30%;
-		margin: 15px 5px 10px 0; 
+		margin: 15px 0px 10px 0px; 
 	}
 
 	.alert-message {
@@ -931,10 +931,6 @@ RESPONSIVE LAYOUT
 	.content-title {
 		padding-left: 25px;
 		padding-right: 25px;
-	}
-
-	input[type="text"] {
-		margin-right: 20px;	 
 	}
 
 	.lineChart-title {
