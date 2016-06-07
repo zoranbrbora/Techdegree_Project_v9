@@ -74,17 +74,20 @@
 					<h3 class="lineChart-title">Traffic</h3>
 					<nav class="lineChart-nav">
 						<ul>
-							<li>Hourly</li>
-							<li>Daily</li>
-							<li class="weekly">Weekly</li>
-							<li>Monthly</li>
+							<li id="hourly">Hourly</li>
+							<li id="daily">Daily</li>
+							<li id="weekly">Weekly</li>
+							<li id="monthly">Monthly</li>
 						</ul>
 					</nav>
 				</div>
 
 				
 	            <div class="lineChart-container">
-					<canvas id="lineChart"></canvas>
+					<canvas id="lineChart-weekly"></canvas>
+					<canvas id="lineChart-hourly"></canvas>
+					<canvas id="lineChart-daily"></canvas>
+					<canvas id="lineChart-monthly"></canvas>
 	            </div>   
 				
 					<!--Line Chart end-->

@@ -1,6 +1,5 @@
-// LINE CHART
-
-var lineChart = document.getElementById("lineChart");
+//WEEKLY CHART
+var lineChart = document.getElementById("lineChart-weekly");
 var myChart = new Chart(lineChart, {
 
     type: 'line',
@@ -33,6 +32,113 @@ var myChart = new Chart(lineChart, {
         }
     }
 });
+
+//HOURLY CHART
+var lineChart = document.getElementById("lineChart-hourly");
+var myChart = new Chart(lineChart, {
+
+    type: 'line',
+    data: {
+        labels: ["00-01", "02-05", "06-09", "10-12", "13-15", "16-18", "19-21", "22-23"],
+        datasets: [{
+            label: 'Traffic',
+            lineTension: 0.2,
+            backgroundColor: 'rgba(96, 96, 205, 0.2)',
+            borderCapStyle: 'square',
+            borderColor: "#6E75DA",
+            pointBorderColor: '#545475',
+            pointBackgroundColor: '#F6F7FF',
+            pointBorderWidth: 1,
+            pointRadius: 4,
+            pointHoverRadius: 6,
+            data: [0, 5, 9, 12, 8, 17, 7, 15]
+        }]
+    },
+    options: {
+        legend: false,
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+
+//DAILY CHART
+var lineChart = document.getElementById("lineChart-daily");
+var myChart = new Chart(lineChart, {
+
+    type: 'line',
+    data: {
+        labels: ["1","2", "3", "4", "5", "6", "7", "8"],
+        datasets: [{
+            label: 'Traffic',
+            lineTension: 0.2,
+            backgroundColor: 'rgba(96, 96, 205, 0.2)',
+            borderCapStyle: 'square',
+            borderColor: "#6E75DA",
+            pointBorderColor: '#545475',
+            pointBackgroundColor: '#F6F7FF',
+            pointBorderWidth: 1,
+            pointRadius: 4,
+            pointHoverRadius: 6,
+            data: [62, 55, 135, 212, 247, 298, 125, 57]
+        }]
+    },
+    options: {
+        legend: false,
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+
+//MONTHLY CHART
+var lineChart = document.getElementById("lineChart-monthly");
+var myChart = new Chart(lineChart, {
+
+    type: 'line',
+    data: {
+        labels: ["January", "February", "March", "April", "May", "June", "July", "August"],
+        datasets: [{
+            label: 'Traffic',
+            lineTension: 0.2,
+            backgroundColor: 'rgba(96, 96, 205, 0.2)',
+            borderCapStyle: 'square',
+            borderColor: "#6E75DA",
+            pointBorderColor: '#545475',
+            pointBackgroundColor: '#F6F7FF',
+            pointBorderWidth: 1,
+            pointRadius: 4,
+            pointHoverRadius: 6,
+            data: [1350, 1900, 2320, 2720, 3150, 3345, 3553, 4120]
+        }]
+    },
+    options: {
+        legend: false,
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+
+
 
 
 //BAR CHART

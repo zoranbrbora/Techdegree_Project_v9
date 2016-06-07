@@ -222,6 +222,12 @@ LINE CHART
 	color: #9C9999;
 }
 
+#lineChart-hourly,
+#lineChart-daily,
+#lineChart-monthly {
+	display: none;
+}
+
 .lineChart-title {
 	font-size: 1.3em;
 	text-transform: uppercase;
@@ -239,7 +245,7 @@ LINE CHART
 	border-radius: 25%;
 }
 
-.weekly {
+.selected {
 	color: white;
 	background: #2C9C2C;
 }
