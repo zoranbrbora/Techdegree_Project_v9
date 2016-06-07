@@ -27,8 +27,6 @@ var  $notBtn = $('#notificationBtn'),
 //DOCUMENT READY FUNCTION
 $( document ).ready(function() {
     $weekly.addClass( "selected" );
-    $message2.hide();
-    $message3.hide();
 });
 
 //SHOW ADITIONAL TWO ALERTS

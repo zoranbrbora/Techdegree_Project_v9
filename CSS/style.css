@@ -188,6 +188,11 @@ ALERT MESSAGES
 	background: #6060CD;
 }
 
+#message2,
+#message3 {
+	display: none;
+}
+
 .alert {
 	text-transform: uppercase;
 	padding-right: 15px;
@@ -658,6 +663,8 @@ RESPONSIVE LAYOUT
 		margin: 15px 0px 10px 0px; 
 	}
 
+	
+
 	.alert-message,
 	.alert-message2,
 	.alert-message3 {
@@ -670,6 +677,8 @@ RESPONSIVE LAYOUT
 	.offButton3 {
 		float: right;
 	}
+
+
 
 	.lineChart-box {
 		display: flex;
