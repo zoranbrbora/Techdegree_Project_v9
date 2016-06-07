@@ -1,26 +1,54 @@
-var  $message1 = $('#message1'),
-	 $offBtn1 = $('#offButton1'),
+var  $notBtn = $('#notificationBtn'),
+     $light = $('#alert-light'),
 
-	 $weekly = $('#weekly'),
-	 $hourly = $('#hourly'),
-	 $daily = $('#daily'),
-	 $monthly = $('#monthly'),
+     $message1 = $('#message1'),
+  	 $offBtn1 = $('#offButton1'),
+     $message2 = $('#message2'),
+     $offBtn2 = $('#offButton2'),
+     $message3 = $('#message3'),
+     $offBtn3 = $('#offButton3'),
 
-	 $weeklyChart = $('#lineChart-weekly'),
-	 $hourlyChart = $('#lineChart-hourly'),
-	 $dailyChart = $('#lineChart-daily'),
-	 $monthlyChart = $('#lineChart-monthly'),
+  	 $weekly = $('#weekly'),
+  	 $hourly = $('#hourly'),
+  	 $daily = $('#daily'),
+  	 $monthly = $('#monthly'),
 
-	 $onoffswitch1 = $('#myonoffswitch'),
-	 $onoffswitch2 = $('#myonoffswitch2'),
-	 $timezone = $('.timezone'),
-	 $save = $('.save'),
-	 $cancel = $('.cancel');
+  	 $weeklyChart = $('#lineChart-weekly'),
+  	 $hourlyChart = $('#lineChart-hourly'),
+  	 $dailyChart = $('#lineChart-daily'),
+  	 $monthlyChart = $('#lineChart-monthly'),
 
+  	 $onoffswitch1 = $('#myonoffswitch'),
+  	 $onoffswitch2 = $('#myonoffswitch2'),
+  	 $timezone = $('.timezone'),
+  	 $save = $('.save'),
+  	 $cancel = $('.cancel');
+
+//DOCUMENT READY FUNCTION
+$( document ).ready(function() {
+    $weekly.addClass( "selected" );
+    $message2.hide();
+    $message3.hide();
+});
+
+//SHOW ADITIONAL TWO ALERTS
+$notBtn.click("on", function() {
+    $light.hide();
+    $message2.show();
+    $message3.show();
+});
 
 // ALERT CLOSE
 $offBtn1.click("on" ,function(){
-    $message1.slideUp(500);
+    $message1.slideUp(300);
+});
+
+$offBtn2.click("on" ,function(){
+    $message2.slideUp(300);
+});
+
+$offBtn3.click("on" ,function(){
+    $message3.slideUp(300);
 });
 
 
@@ -39,7 +67,7 @@ $("#send").click(function(){
 });
 
 // MEMBERS AUTOCOMPLETE SEARCH
-$( "#autocomplete" ).autocomplete({
+$( ".autocomplete" ).autocomplete({
   source: [ "Victoria Chambers", "Dale Byrd", "Dawn Wood", "Dan Oliver" ]
 });
 
@@ -83,10 +111,6 @@ $cancel.click( function() {
 });
 
 loadSettings();
-
-$( document ).ready(function() {
-    $weekly.addClass( "selected" );
-});
 
 
 //ADDED FUNCIONALLITY TO LINE CHART NAVIGATION
@@ -147,6 +171,9 @@ $monthly.click("on" ,function(){
    $dailyChart.hide();
    $weeklyChart.hide();
    $monthlyChart.show();
-})
+});
+
+
+
 
 

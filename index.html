@@ -65,6 +65,8 @@
 
 				<div class="alert-box" id="alerts">
 					<p class="alert-message" id="message1"><span class="alert">Alert</span>Contrary to popular belief, Lorem Ipsum is not simply random text.<span class="offButton" id="offButton1">X</span></p>
+					<p class="alert-message2" id="message2"><span class="alert">Alert</span>Contrary to popular belief, Lorem Ipsum is not simply random text.<span class="offButton" id="offButton2">X</span></p>
+					<p class="alert-message3" id="message3"><span class="alert">Alert</span>Contrary to popular belief, Lorem Ipsum is not simply random text.<span class="offButton" id="offButton3">X</span></p>
 				</div>
 
 
@@ -267,12 +269,12 @@
 							<form action="index.html" method="post" id="user-message">
 								<fieldset>
        							<legend>Message User</legend>
-									 <label for="autocomplete"></label>
-		         						<input type="search" class="search-member" id="autocomplete" name="search-member" value="" placeholder="Search Member">
+									 <label for="contact_name"></label>
+		         						<input type="search" class="search-member autocomplete" id="contact_name" name="search-member" value="" placeholder="Search Member">
 		         						<span class="search-box"></span>
-		         					 <label for="textarea"></label>
-	          							<textarea class="user-message" id="textarea" name="message" placeholder="Send Message To Member"></textarea>
-	          						<p class="warning-message"></p>	
+		         					 <label for="contact_message"></label>
+	          							<textarea class="user-message textarea" id="contact_message" name="message" placeholder="Send Message To Member"></textarea>
+	          							<p class="warning-message"></p>	
 	          						<button id="send" type="button">Send</button>
 	          					</fieldset>			
 							</form>
@@ -405,6 +407,8 @@
 			</div>
 
 		</div>
+
+		
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>

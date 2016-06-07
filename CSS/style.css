@@ -176,7 +176,9 @@ ALERT MESSAGES
 	line-height: 20px;
 }
 
-.alert-message {
+.alert-message,
+.alert-message2,
+.alert-message3 {
 	margin: 10px 0px;
 	padding: 10px;
 	border-radius: 2%;
@@ -192,7 +194,9 @@ ALERT MESSAGES
 	color: #fff;
 }
 
-.offButton {
+.offButton,
+.offButton2,
+.offButton3 {
 	margin-left: 40px;
 	font-weight: 900;
 	font-size: 20px;
@@ -642,12 +646,16 @@ RESPONSIVE LAYOUT
 		margin: 15px 0px 10px 0px; 
 	}
 
-	.alert-message {
+	.alert-message,
+	.alert-message2,
+	.alert-message3 {
 		text-align: left;
 		padding-left: 30px;
 	}
 
-	.offButton {
+	.offButton,
+	.offButton2,
+	.offButton3 {
 		float: right;
 	}
 
