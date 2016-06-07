@@ -412,6 +412,11 @@ tr {
 	border-radius: 100%;
 }
 
+.member-name {
+	display: inline-block;
+	margin-bottom: 3px;
+}
+
 .cell-mail {
 	color : #6060CD;
 	cursor: pointer;
@@ -501,9 +506,9 @@ textarea:focus {
 	background: #6060CD;
 }
 
-.ui-autocomplete {
-	background: #6060CD;
-	color: white;
+.error {
+	color: #6060CD;
+	margin-left: 1%;
 	display: inline-block;
 	line-height: 16px;
 	font-size: 16px;
@@ -828,6 +833,7 @@ RESPONSIVE LAYOUT
 		font-size: 0.8rem;
 	}
 
+
 	.settings-box {
 		width: 50%;
 	}
@@ -878,7 +884,7 @@ RESPONSIVE LAYOUT
 		width: 90%;
 		margin-left: 5%;
 		height: 30px;
-		margin-top: 38px;
+		margin-top: 42px;
 	}
 
 	.save {
@@ -988,7 +994,8 @@ RESPONSIVE LAYOUT
 	.barChart-title,
 	.pieChart-title,
 	.warning-message,
-	.settings-title {
+	.settings-title,
+	.error {
 		font-size: 1.2em;
 	}
 
@@ -1000,7 +1007,6 @@ RESPONSIVE LAYOUT
 	.arrow {
 		font-size: 30px;
 	}
-
 
 }
 
@@ -1049,7 +1055,7 @@ RESPONSIVE LAYOUT
 	}
 
 	.button-container {
-		margin-top: 52px;
+		margin-top: 55px;
 	}
 
 }	

@@ -52,19 +52,28 @@ $offBtn3.click("on" ,function(){
 });
 
 
-// SENDING MESSAGE
-$("form").click(function(){
-    $(".nav li").removeAttr('id');
-   	$(this).attr('id');
+// SENDING MESSAGE AND SELECTING USER
+var $form = $("#myid"),
+    $errorMsg = $("<span class='error'>Sorry blank info!!!</span>");
+
+$("#send").on("click", function () {
+    var toReturn = true;
+    $("input, textarea", $form).each(function () {
+        if ($(this).val() == "") {
+            if (!$(this).data("error")) {
+                $(this).data("error", $errorMsg.clone().insertAfter($(this)));
+            }
+            toReturn = false;
+        } else {
+            if ($(this).data("error")) {
+                $(this).data("error").remove();
+                $(this).removeData("error");
+            }
+        }
+    });
+    return toReturn;
 });
 
-$("#send").click(function(){
- 	if (!$(".user-message").val()) {
-   		$(".warning-message").text("Please enter a message").show();
-	} else {
-		$(".warning-message").text("Your Message is on the way!");
-	}
-});
 
 // MEMBERS AUTOCOMPLETE SEARCH
 $( ".autocomplete" ).autocomplete({
