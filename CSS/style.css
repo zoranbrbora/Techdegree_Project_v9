@@ -908,10 +908,12 @@ RESPONSIVE LAYOUT
 	.save {
 		margin-left: -1px;
 		width: 45%;
+		padding: 5.5px 0;
 	}
 
 	.cancel {
 		margin-right: 0px;
+		padding: 5.5px 0;
 	}
 
 
@@ -1075,6 +1077,13 @@ RESPONSIVE LAYOUT
 
 	.button-container {
 		margin-top: 65px;
+	}
+
+	.save,
+	.cancel {
+		margin-left: -1px;
+		width: 45%;
+		padding: 6px 0;
 	}
 
 }	
