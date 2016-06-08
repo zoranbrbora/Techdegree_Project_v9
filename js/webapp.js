@@ -51,6 +51,9 @@ $offBtn3.click("on" ,function(){
 });
 
 
+
+
+
 $send.click(function () {
     if (document.getElementById("contact_name").value === "") {
         $(".user-member").text("Please Select User");
@@ -63,6 +66,13 @@ $send.click(function () {
         $(".warning-message").text("Your Message is on the way!!!");
     } 
 });
+
+$send.click(function () {
+    if (document.getElementById("contact_name").value === "") {
+        $(".warning-message").text("Can't send message info required!!!"); 
+    }
+});
+
 
 
 
