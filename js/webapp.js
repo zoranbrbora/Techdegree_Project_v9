@@ -22,7 +22,8 @@ var  $notBtn = $('#notificationBtn'),
   	 $onoffswitch2 = $('#myonoffswitch2'),
   	 $timezone = $('.timezone'),
   	 $save = $('.save'),
-  	 $cancel = $('.cancel');
+  	 $cancel = $('.cancel'),
+     $send = $('#send');
 
 //DOCUMENT READY FUNCTION
 $( document ).ready(function() {
@@ -51,25 +52,40 @@ $offBtn3.click("on" ,function(){
 
 
 // SENDING MESSAGE AND SELECTING USER
-var $form = $("#myid"),
-    $errorMsg = $("<span class='error'>Sorry blank info!!!</span>");
+//var $form = $("#myid"),
+    //$errorMsg = $("<span class='error'>Sorry blank info!!!</span>");
 
-$("#send").on("click", function () {
-    var toReturn = true;
-    $("input, textarea", $form).each(function () {
-        if ($(this).val() == "") {
-            if (!$(this).data("error")) {
-                $(this).data("error", $errorMsg.clone().insertAfter($(this)));
-            }
-            toReturn = false;
-        } else {
-            if ($(this).data("error")) {
-                $(this).data("error").remove();
-                $(this).removeData("error");
-            }
-        }
-    });
-    return toReturn;
+//$("#send").on("click", function () {
+   // var toReturn = true;
+    //$("input, textarea", $form).each(function () {
+      //  if ($(this).val() == "") {
+        //    if (!$(this).data("error")) {
+            //    $(this).data("error", $errorMsg.clone().insertAfter($(this)));
+          //  }
+          // toReturn = false;
+       // } else {
+           // if ($(this).data("error")) {
+             //   $(this).data("error").remove();
+             //   $(this).removeData("error");
+          //  } 
+       // }
+    //});
+    //return toReturn;
+//});
+$send.click(function () {
+    if (document.getElementById("message-for-user").value === "") {
+        $(".user-member").text("Please Select User");
+    } else {
+        $(".user-member").text("User Selected");
+    }
+});
+
+$send.click(function () {
+    if (document.getElementById("contact_message").value === "") {
+        $(".warning-message").text("Please Enter Message");
+    } else {
+        $(".warning-message").text("Your Message is on the way!!!");
+    }
 });
 
 

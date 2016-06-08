@@ -518,16 +518,17 @@ textarea:focus {
 	display: inline-block;
 }
 
-.error {
+/*.error {
 	color: #6060CD;
 	margin-left: 1%;
 	display: inline-block;
 	line-height: 16px;
 	font-size: 16px;
 	padding: 5px;
-}
+}*/
 
-.warning-message {
+.warning-message,
+.user-member {
 	color: #6060CD;
 	font-weight: bold;
 	margin: 0px;
