@@ -73,7 +73,7 @@ $offBtn3.click("on" ,function(){
     //return toReturn;
 //});
 $send.click(function () {
-    if (document.getElementById("message-for-user").value === "") {
+    if (document.getElementById("contact_name").value === "") {
         $(".user-member").text("Please Select User");
     } else {
         $(".user-member").text("User Selected");
