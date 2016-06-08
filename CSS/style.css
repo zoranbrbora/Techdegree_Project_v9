@@ -488,7 +488,8 @@ legend {
 .search-member,
 textarea,
 button,
-.warning-message {
+.warning-message,
+.user-member {
 	width: 98%;
 	margin-left: 1%;
 	margin-right: 1%;
