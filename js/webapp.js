@@ -56,12 +56,12 @@ $offBtn3.click("on" ,function(){
 // MESSAGE USER SETTINGS
 $send.click(function () {
     if (document.getElementById("contact_message").value === "") {
-        $(".warning-message").text("Please Enter Message");
+        $(".warning-message").text("Please Enter Message").css('background-color', 'transparent').css('color', '#6060CD');
     } else {
-        $(".warning-message").text("Message Sent!!!");
+        $(".warning-message").text("Your message is on the way!!!").css('background-color', '#6060CD').width(300).css('border-radius', '3%', 'padding', '10px').css('color', 'white');
     } 
     if (document.getElementById("contact_name").value === "") {
-        $(".warning-message").text("Please provide Member!!!");
+        $(".warning-message").text("Please provide Member!!!").css('background-color', 'transparent').css('color', '#6060CD');;
     } 
 });
 
