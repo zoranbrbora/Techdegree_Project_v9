@@ -56,21 +56,23 @@ $offBtn3.click("on" ,function(){
 
 $send.click(function () {
     if (document.getElementById("contact_name").value === "") {
-        $(".user-member").text("Please Select User");
+        $(".user-member").text("Please Select Member");
     } else {
-        $(".user-member").text("User Selected");
+      $(".user-member").text("Member Selected");
     }
     if (document.getElementById("contact_message").value === "") {
         $(".warning-message").text("Please Enter Message");
     } else {
-        $(".warning-message").text("Your Message is on the way!!!");
+        $(".warning-message").text("Message Sent!!!");
+        $(".user-member").hide();
     } 
 });
 
 $send.click(function () {
     if (document.getElementById("contact_name").value === "") {
-        $(".warning-message").text("Can't send message info required!!!"); 
-    }
+        $(".warning-message").text("Please provide Member!!!");
+        $(".user-member").hide(); 
+    } 
 });
 
 

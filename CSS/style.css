@@ -23,7 +23,6 @@ a {
 	text-decoration: none;
 }
 
-
 /*=====================
 HEADER
 ======================*/
@@ -516,17 +515,11 @@ textarea:focus {
 	color: #fff;
 	background: #6060CD;
 	padding: 5px;
+	line-height: 20px;
 	display: inline-block;
+	font-size: 16px;
 }
 
-/*.error {
-	color: #6060CD;
-	margin-left: 1%;
-	display: inline-block;
-	line-height: 16px;
-	font-size: 16px;
-	padding: 5px;
-}*/
 
 .warning-message,
 .user-member {
@@ -1016,8 +1009,14 @@ RESPONSIVE LAYOUT
 	.warning-message,
 	.user-member,
 	.settings-title,
+	.ui-widget-content,
 	.error {
 		font-size: 1.2em;
+	}
+
+
+	.ui-widget-content {
+		line-height: 25px;
 	}
 
 	.avatar-box {
