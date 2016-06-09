@@ -503,6 +503,7 @@ button {
 	background: #6060CD;
 	text-transform: uppercase;
 	font-weight: bold;	
+	cursor: pointer;
 }
 
 .search-member:focus,
@@ -624,6 +625,7 @@ SETTINGS
 	margin-top: 10px;
 	background: #6060CD;
 	color: white;
+	cursor: pointer;
 }
 
 
