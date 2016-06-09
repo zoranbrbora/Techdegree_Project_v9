@@ -58,7 +58,7 @@ $send.click(function () {
     if (document.getElementById("contact_name").value === "") {
         $(".user-member").text("Please Select Member");
     } else {
-      $(".user-member").text("Member Selected");
+      $(".user-member").text("");
     }
     if (document.getElementById("contact_message").value === "") {
         $(".warning-message").text("Please Enter Message");
