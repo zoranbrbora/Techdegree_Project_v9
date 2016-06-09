@@ -53,27 +53,19 @@ $offBtn3.click("on" ,function(){
 
 
 
-
+// MESSAGE USER SETTINGS
 $send.click(function () {
-    if (document.getElementById("contact_name").value === "") {
-        $(".user-member").text("Please Select Member");
-    } else {
-      $(".user-member").text("");
-    }
     if (document.getElementById("contact_message").value === "") {
         $(".warning-message").text("Please Enter Message");
     } else {
         $(".warning-message").text("Message Sent!!!");
-        $(".user-member").hide();
+    } 
+    if (document.getElementById("contact_name").value === "") {
+        $(".warning-message").text("Please provide Member!!!");
     } 
 });
 
-$send.click(function () {
-    if (document.getElementById("contact_name").value === "") {
-        $(".warning-message").text("Please provide Member!!!");
-        $(".user-member").hide(); 
-    } 
-});
+
 
 
 
