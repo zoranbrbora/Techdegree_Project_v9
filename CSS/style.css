@@ -1081,6 +1081,10 @@ RESPONSIVE LAYOUT
 		font-size: 1.2em;
 	}
 
+	.avatar-box {
+		padding-bottom: 14px;
+	}
+
 	.newMembers-caption {
 		font-size: 1.0em;
 	}
