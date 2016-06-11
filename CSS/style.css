@@ -465,6 +465,19 @@ MEMBERS ACTIVITY
 	margin-left: 5px;
 }
 
+.activity-icon {
+	width: 15px;
+	border-radius: 100%;
+	background: #6156a1;
+	cursor: pointer; 
+	padding: 2px;
+	border: 1px solid blue;
+}
+
+.facebook-activityIcon {
+	height: 15px;
+}
+
 .arrow {
 	font-size: 20px;
 	margin-right: 10px;
@@ -1028,6 +1041,17 @@ RESPONSIVE LAYOUT
 		padding-bottom: 19.5px;
 	}
 
+	.activity-icon {
+		width: 20px;
+		position: relative;
+		top: 3px;
+	}
+
+	.facebook-activityIcon {
+		width: 20px;
+		height: 20px;
+	}
+
 	.arrow {
 		font-size: 30px;
 	}
@@ -1087,6 +1111,15 @@ RESPONSIVE LAYOUT
 		margin-left: -1px;
 		width: 45%;
 		padding: 6px 0;
+	}
+
+	.activity-icon {
+		width: 25px;
+	}
+
+	.facebook-activityIcon {
+		width: 25px;
+		height: 25px;
 	}
 
 }	
