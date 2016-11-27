@@ -1,7 +1,7 @@
 /*=====================
 GENERAL
 ======================*/
-
+/* testing atom */
 
 *,
 *:before,
@@ -57,7 +57,7 @@ HEADER
 .avatar {
 	display: flex;
 	align-items: center;
-	float: right;	
+	float: right;
 	padding: 15px 5px 5px 5px;
 }
 
@@ -424,7 +424,7 @@ tr {
 .cell-mail {
 	color : #6060CD;
 	cursor: pointer;
-} 
+}
 
 .last-cell {
 	margin-bottom: -30px;
@@ -469,7 +469,7 @@ MEMBERS ACTIVITY
 	width: 15px;
 	border-radius: 100%;
 	background: #6156a1;
-	cursor: pointer; 
+	cursor: pointer;
 	padding: 2px;
 	border: 1px solid blue;
 }
@@ -516,7 +516,7 @@ button {
 	color: #fff;
 	background: #6060CD;
 	text-transform: uppercase;
-	font-weight: bold;	
+	font-weight: bold;
 	cursor: pointer;
 }
 
@@ -622,7 +622,7 @@ SETTINGS
     position: absolute; top: 0; bottom: 0;
     right: 56px;
     border: 2px solid #999999; border-radius: 20px;
-    transition: all 0.3s ease-in 0s; 
+    transition: all 0.3s ease-in 0s;
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner,
 .onoffswitch2-checkbox:checked + .onoffswitch2-label .onoffswitch2-inner {
@@ -630,7 +630,7 @@ SETTINGS
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch,
 .onoffswitch2-checkbox:checked + .onoffswitch2-label .onoffswitch2-switch {
-    right: 0px; 
+    right: 0px;
 }
 
 .timezone {
@@ -673,10 +673,10 @@ RESPONSIVE LAYOUT
 	input[type="text"] {
 		float: right;
 		width: 30%;
-		margin: 15px 0px 10px 0px; 
+		margin: 15px 0px 10px 0px;
 	}
 
-	
+
 
 	.alert-message,
 	.alert-message2,
@@ -715,7 +715,7 @@ RESPONSIVE LAYOUT
 		border-top: 1px solid rgba(0, 0 ,0, .5);
 		margin-top: 50px;
 		margin-bottom: 50px;
-	}	
+	}
 
 	.barChart-title {
 		display: inline-block;
@@ -773,7 +773,7 @@ RESPONSIVE LAYOUT
 		border-top: 1px solid rgba(0, 0 ,0, .5);
 		border-bottom: 1px solid rgba(0, 0 ,0, .5);
 		margin-top: 20px;
-	}	
+	}
 
 	.newMembers-box {
 		width: 50%;
@@ -879,7 +879,7 @@ RESPONSIVE LAYOUT
 		width: 95%;
 		margin-left: 5%;
 	}
-	
+
 	.notification {
 		margin-top: 15px;
 	}
@@ -889,7 +889,7 @@ RESPONSIVE LAYOUT
 
 	.not-text {
 		font-size: 0.8em;
-		margin-left: 0px;	
+		margin-left: 0px;
 	}
 
 	.onoffswitch {
@@ -1127,4 +1127,4 @@ RESPONSIVE LAYOUT
 		height: 25px;
 	}
 
-}	
+}
